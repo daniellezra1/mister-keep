@@ -1,0 +1,85 @@
+ul.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li.note {
+    list-style: none;
+    width: 300px;
+    margin: 15px;
+    text-align: left;
+}
+
+li.note .note-prev {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+li.note .note-prev:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px rgba(0,0,0,0.30);
+}
+
+li.note .note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 3px;
+    border-bottom: 1px solid  rgb(146, 146, 146);
+}
+
+li.note .note-header .btn-area {
+    width: 165px;
+}
+
+li.note .note-header h4 {
+    max-width: 100px;
+}
+
+li.note .note-header button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(146, 146, 146);
+}
+
+li.note .note-header button:hover {
+    color: black;
+}
+
+li.note img,
+li.note p {
+    width: 100%;
+    padding: 3px;
+    padding-bottom: 6px;
+}
+
+li.note iframe, 
+li.note ul,
+li.note audio {
+    padding-bottom: 6px;
+    outline: none;
+}
+
+.mark-line {
+      text-decoration-line: line-through;
+}
+
+li.note .note-header button.pinned {
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    ul.notes {
+        padding-left: 0;
+    }
+    li.note {
+        margin: 15px auto;
+    }  
+}

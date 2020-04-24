@@ -1,0 +1,14 @@
+.miss-keep-app {
+    background-color: #faf5f7;
+    padding: 30px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.miss-keep-app h1 {
+    font-size: 1.17em;
+    margin-top: 10px;
+}

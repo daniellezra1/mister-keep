@@ -1,0 +1,36 @@
+
+.msg-container {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-25%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px rgba(0,0,0,0.30);
+}
+
+.msg-container div {
+    padding: 0 20px 0 5px;
+}
+
+.error {
+    border: 3px solid red;
+    color: red;
+}
+
+.success {
+    border: 3px solid rgb(91, 92, 91);
+    color: rgb(91, 92, 91);
+}
+
+
+@media screen and (max-width: 700px) {
+    .msg-container {
+        left: 33%;
+    }
+}

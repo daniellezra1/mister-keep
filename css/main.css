@@ -1,0 +1,53 @@
+@import "global-cmps/user-msg.css";
+@import "apps/miss-keep/miss-keep.css";
+@import "apps/miss-keep/note-add.css";
+@import "apps/miss-keep/note-filter.css";
+@import "apps/miss-keep/note-list.css";
+@import "apps/miss-keep/note-edit.css";
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+html {
+  font-family: "roboto-regular", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #e5e8ed;
+  overflow: hidden;
+}
+.main-container {
+  background-color: white;
+  display: flex;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  height: 100vh;
+}
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  outline: none;
+}
